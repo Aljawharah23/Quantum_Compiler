@@ -53,7 +53,7 @@ if __name__ == "__main__":
     ])
     target = np.array([0.95, 0.90, 0.85, 0.80, 0.75])
 
-    # Use the entire dataset for training (assuming it's small)
+  
     mapper.select_model('supervised')
     predictions = mapper.adapt_and_optimize(features, target)
     
@@ -63,7 +63,7 @@ if __name__ == "__main__":
     print("Mean Squared Error:", mse)
     print("R² Score:", r2)
 
-    # Simulate and feedback using an example quantum circuit
+
     example_circuit = QuantumCircuit(2)
     example_circuit.h(0)
     example_circuit.cx(0, 1)
